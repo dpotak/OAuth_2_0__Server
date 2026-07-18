@@ -1,6 +1,0 @@
-START a
-START b
-CALLBACK a sessan1
-CALLBACK a sessan1
-CALLBACK b sessan1
-CALLBACK c sessan2

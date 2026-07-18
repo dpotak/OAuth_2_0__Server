@@ -1,7 +1,0 @@
-NOW 10
-ISSUE carol read:profile
-ISSUE dave write:posts
-INTROSPECT T1
-INTROSPECT T2
-REVOKE T99
-INTROSPECT T99

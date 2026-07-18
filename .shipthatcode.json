@@ -1,7 +1,0 @@
-{
-  "course": "build-oauth-server",
-  "language": "python",
-  "language_id": 71,
-  "entrypoint": "main.py",
-  "version": 1
-}

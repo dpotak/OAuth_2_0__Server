@@ -1,1 +1,0 @@
-https://auth.example.com/authorize?client_id=c1&redirect_uri=https%3A%2F%2Fapp.com%2Fcb%3Fx%3D1&response_type=code&scope=read%20write&state=s1

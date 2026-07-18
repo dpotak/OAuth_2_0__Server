@@ -1,5 +1,0 @@
-REGISTER_CLIENT app2 https://app2.com/cb
-AUTH app2 https://app2.com/cb s2 E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
-EXCHANGE app2 C1 wrongverifierxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-EXCHANGE app2 C1 dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk
-EXCHANGE app2 C1 dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk

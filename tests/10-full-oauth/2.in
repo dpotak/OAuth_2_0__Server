@@ -1,3 +1,0 @@
-AUTH ghost https://x.com/cb s1 anychallenge
-EXCHANGE ghost C1 anything
-INTROSPECT T99
