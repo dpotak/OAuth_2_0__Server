@@ -1,0 +1,5 @@
+token=T1
+token=T2
+active=true sub=carol exp=3610 scope=read:profile
+active=true sub=dave exp=3610 scope=write:posts
+active=false

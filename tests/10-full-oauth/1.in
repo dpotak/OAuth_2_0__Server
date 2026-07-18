@@ -1,0 +1,5 @@
+REGISTER_CLIENT app1 https://app.com/cb
+AUTH app1 https://app.com/cb state1 E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
+EXCHANGE app1 C1 dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk
+INTROSPECT T1
+AUTH app1 https://wrong.com/cb state2 E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM

@@ -1,0 +1,7 @@
+REGISTER_CLIENT a https://a.com/cb
+REGISTER_CLIENT b https://b.com/cb
+AUTH a https://a.com/cb sA E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
+AUTH b https://b.com/cb sB E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
+EXCHANGE b C1 dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk
+EXCHANGE a C1 dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk
+INTROSPECT T1

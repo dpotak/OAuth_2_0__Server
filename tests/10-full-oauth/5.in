@@ -1,0 +1,4 @@
+REGISTER_CLIENT app3 https://app3.com/cb
+AUTH app3 https://app3.com/cb/ s3 E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
+AUTH app3 https://app3.com/cb s3 E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
+EXCHANGE app3 C1 dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk

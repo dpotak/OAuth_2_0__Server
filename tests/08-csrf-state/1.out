@@ -1,0 +1,6 @@
+state=sessan1
+state=sessbn2
+OK
+BAD reason=wrong_state
+BAD reason=wrong_state
+BAD reason=unknown_session

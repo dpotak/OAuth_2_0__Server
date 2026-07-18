@@ -1,0 +1,1 @@
+https://github.com/login/oauth/authorize?client_id=myclientid&redirect_uri=https%3A%2F%2Fmyapp.io%2Fcb&response_type=code&scope=repo%20user&state=xyz989

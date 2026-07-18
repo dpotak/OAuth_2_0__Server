@@ -1,0 +1,5 @@
+token=T1
+active=true sub=alice exp=3600 scope=read:email
+active=false
+token=T2
+active=false
