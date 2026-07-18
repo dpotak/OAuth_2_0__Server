@@ -1,23 +1,40 @@
-import sys
+from flask import Flask, request, redirect
+import secrets
 
-# OAuth 2.0 roles (RFC 6749 §1.1):
-# Resource Owner, Client, Authorization Server, Resource Server
-ROLES = {
-    "user grants access": "RESOURCE_OWNER",
-    "third-party app": "CLIENT",
-    "issues tokens": "AUTHORIZATION_SERVER",
-    "hosts protected resources": "RESOURCE_SERVER",
-    "validates tokens": "RESOURCE_SERVER",
-    "redirects to login": "CLIENT",
+app = Flask(__name__)
+
+clients = {
+    "my_client": {
+        "redirect_uri": "http://localhost:3000/callback"
+    }
 }
 
-for raw in sys.stdin:
-    line = raw.rstrip("\n").strip().lower()
-    if not line: continue
-    for k, v in ROLES.items():
-        if k in line:
-            print(v); break
-    else:
-        print("UNKNOWN")
+
+@app.route("/")
+def home():
+    return "OAuth server works!"
 
 
+@app.route("/authorize")
+def authorize():
+    client_id = request.args.get("client_id")
+    redirect_uri = request.args.get("redirect_uri")
+    state = request.args.get("state")
+
+    if client_id not in clients:
+        return "Unknown client", 400
+
+    if clients[client_id]["redirect_uri"] != redirect_uri:
+        return "Invalid redirect URI", 400
+
+    code = secrets.token_urlsafe(16)
+
+    return f"""
+Authorization successful!<br>
+Code: {code}<br>
+State: {state}
+"""
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
